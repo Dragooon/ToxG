@@ -143,7 +143,7 @@ class ToxgTheme
 				// Take the first inherited template and use it as our main one.
 				$source = array_pop($inherited);
 
-			$compiled = $this->compile_dir . '/.toxg.' . preg_replace('~[^a-zA-Z0-9_-]~', '_', $filename) . '.' . $overlay_hash . '.php';
+			$compiled = $this->compile_dir . '/toxg.' . preg_replace('~[^a-zA-Z0-9_-]~', '_', $filename) . '.' . $overlay_hash . '.php';
 
 			// Note: if overlays change, this won't work unless the overlay was touched.
 			// Normally, you'd flush the system when it needs a recompile.
